@@ -18,9 +18,11 @@ layout: default
   
   
   <ul>
-    {% for part in site.data %}
+    {% for folder in site.data %}
+    {% assign foldername = folder[0] %}
+    {% assign data = folder[1].data %}
     <li>
-        {{ part }}, {{part.data }}, {{ part.data.name }}, {{ part.data.type}}
+        {{ foldername }}, {{ data.name }}, {{ data.type }}
     </li>
     {% endfor %}
   </ul>
