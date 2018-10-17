@@ -15,4 +15,13 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+  
+  
+  <ul>
+    {% for part in site.data %}
+    <li>
+        {{ part }}
+    </li>
+    {% endfor %}
+  </ul>
 </div>
