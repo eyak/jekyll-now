@@ -20,7 +20,7 @@ layout: default
   <ul>
     {% for part in site.data %}
     <li>
-        {{ part }}
+        {{ part.data.name }}, {{ part.data.type}}
     </li>
     {% endfor %}
   </ul>
